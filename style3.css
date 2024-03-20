@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.login-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1099;
+    background-color: rgba(255, 255, 255, 0.6); /* Changed background color to white */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.login-popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.login-popup .box {
+    background-color: #efefef;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    margin-left: 500px;
+    transition: all 1s ease;
+}
+
+.login-popup.show .box {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.login-popup .box .img-area {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-popup .box .img-area h1 {
+    font-size: 30px;
+}
+
+.login-popup .box .img-area .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: zoomInOut 7s linear infinite;
+    z-index: -1;
+}
+
+/* Style for inputs */
+.login-popup .box .form-area {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items (inputs) horizontally centered */
+}
+
+.login-popup .box .form-area input[type="text"],
+
+
+.login-popup .box .form-area input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-popup .box .form-area input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-popup .box .form-area input[type="submit"]:hover {
+    background-color: #45a049;
+}

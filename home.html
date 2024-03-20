@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,14 +14,81 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
+
    
-  
-
 </head>
-
-
+<head>
+   <title>Login popup box</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style3.css" type="text/css">
+ </head>
+ <body>
+ 
+   <div class="login-popup">
+       <div class="box">
+           <div class="img-area">
+              <div class="img">
+              </div>
+         <img src="assets\images\1W.png" alt="">
+           </div>
+           <div class="form">
+         <div id="myDiv">
+           <div class="close" onclick="closeDiv()">&times;</div>
+         </div>
+              <h1>Login Registration</h1>
+              <form>
+                 <div class="form-group">
+                    <input type="text" id="Email" placeholder="Email" class="form-control">
+                 </div>
+                 <div class="form-group">
+                    <input type="password" id="Password" placeholder="Password" class="form-control">
+                 </div>
+                 <div class="form-group">
+             <label for="country">Country:</label>
+             <select id="country">
+               <option value="afghanistan">Afghanistan</option>
+               <option value="albania">Albania</option>
+               <option value="algeria">Algeria</option>
+               <option value="andorra">Andorra</option>
+               <option value="angola">Angola</option>
+               <option value="argentina">Argentina</option>
+               <option value="australia">Australia</option>
+               <option value="austria">Austria</option>
+               <option value="bahrain">Bahrain</option>
+               <option value="bangladesh">Bangladesh</option>
+               <option value="belgium">Belgium</option>
+               <option value="brazil">Brazil</option>
+               <option value="canada">Canada</option>
+               <option value="chile">Chile</option>
+               <option value="china">China</option>
+               <option value="colombia">Colombia</option>
+               <option value="croatia">Croatia</option>
+               <option value="cuba">Cuba</option>
+               <option value="denmark">Denmark</option>
+               <option value="egypt">Egypt</option>
+               <option value="ethiopia">Ethiopia</option>
+               <option value="finland">Finland</option>
+               <option value="france">France</option>
+               <option value="germany">Germany</option>
+               <option value="greece">Greece</option>
+               <option value="hungary">Hungary</option>
+               <option value="iceland">Iceland</option>
+               <option value="india">India</option>
+                    <label><input type="checkbox">
+                    </label>
+                 </div>
+                 <button type="button" onclick="login()" class="btn">Log In</button>
+              </form>
+           </div>
+       </div>
+   </div>
+ 
+ <script src="script2.js"></script>
+ <body id="top">
+ </body>
+ 
 <body>
-
    <!-- header section starts  -->
 
    <section class="header" id="header">
